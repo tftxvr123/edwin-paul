@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edwin Paul | Product Manager | Product Builder</title>
+  <meta name="description" content="Edwin Paul is a Product Manager and Product Builder with 10+ years of experience across product strategy, user research, analytics, product adoption, technology, and data-driven product development.">
+  <meta name="keywords" content="Product Manager, Product Builder, Product Owner, Technical PM, Product Analytics, Enterprise SaaS, API Platform, Edwin Paul">
+  <meta name="author" content="Edwin Paul">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Edwin Paul | Product Manager | Product Builder">
+  <meta property="og:description" content="Turning customer problems, user insights, and data into scalable products, intuitive experiences, and measurable outcomes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://edwinpaul.com">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              accent: '#2563eb',
+            },
+            surface: {
+              dark: '#0b0f19',
+              card: '#111827',
+              border: '#1f2937',
+              muted: '#94a3b8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom refined styling */
+    body {
+      background-color: #0b0f19;
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::selection {
+      background-color: #2563eb;
+      color: #ffffff;
+    }
+
+    .glass-nav {
+      background: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .card-surface {
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .card-surface:hover {
+      border-color: rgba(37, 99, 235, 0.4);
+    }
+
+    .badge-metric {
+      background: rgba(37, 99, 235, 0.12);
+      border: 1px solid rgba(37, 99, 235, 0.25);
+      color: #93c5fd;
+    }
+
+    .subtle-glow {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, rgba(11, 15, 25, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Accordion transitions */
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+    }
+    .accordion-content.expanded {
+      max-height: 2500px;
+      transition: max-height 0.4s ease-in-out;
+    }
+  </style>
+</head>
+<body class="relative min-h-screen text-slate-200">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300" id="main-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="#home" class="flex items-center space-x-3 group">
+          <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-white tracking-wider shadow-lg shadow-blue-500/20 group-hover:bg-blue-500 transition-colors">
+            EP
+          </div>
+          <div>
+            <span class="font-bold text-lg text-white tracking-tight group-hover:text-blue-400 transition-colors">Edwin Paul</span>
+            <span class="text-xs block text-slate-400 font-medium">Product Manager</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-1 text-sm font-medium text-slate-300">
+          <a href="#about" class="px-3 py-2 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors">About</a>
+          <a href="#experience" class="px-3 py-2 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors">Experience</a>
+          <a href="#products" class="px-3 py-2 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors">Products Built</a>
+          <a href="#capabilities" class="px-3 py-2 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors">Capabilities</a>
+          <a href="#framework" class="px-3 py-2 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors">Product Thinking</a>
+          <a href="#metrics" class="px-3 py-2 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors">Metrics</a>
+          <a href="#education" class="px-3 py-2 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors">Education</a>
+          <a href="#resume" class="px-3 py-2 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors">Resume</a>
+          <a href="#contact" class="ml-3 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition-all font-semibold shadow-md shadow-blue-600/30">Get in Touch</a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="lg:hidden flex items-center">
+          <button id="mobile-menu-toggle" type="button" aria-label="Toggle menu" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+            <svg class="h-6 w-6" id="menu-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg class="h-6 w-6 hidden" id="menu-icon-close" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-4 pt-3 pb-6 space-y-1.5" id="mobile-menu">
+      <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white mobile-link">About</a>
+      <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white mobile-link">Experience</a>
+      <a href="#products" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white mobile-link">Products Built</a>
+      <a href="#capabilities" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white mobile-link">Capabilities</a>
+      <a href="#framework" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white mobile-link">Product Thinking</a>
+      <a href="#metrics" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white mobile-link">Metrics</a>
+      <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white mobile-link">Education</a>
+      <a href="#resume" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white mobile-link">Resume</a>
+      <a href="#contact" class="block mt-2 px-3 py-2.5 rounded-md text-base font-medium bg-blue-600 text-white text-center hover:bg-blue-500 mobile-link">Get in Touch</a>
+    </div>
+  </nav>
+
+  <!-- Ambient Glow Effects -->
+  <div class="subtle-glow -top-20 -left-20"></div>
+  <div class="subtle-glow top-1/3 -right-20"></div>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-4xl">
+        <!-- Status Pill -->
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs text-slate-300 font-medium mb-6 tracking-wide">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Product Manager &amp; Builder • Open to Senior PM Opportunities
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+          Edwin Paul
+          <span class="block text-2xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-400 via-indigo-300 to-slate-400 bg-clip-text text-transparent mt-2">
+            Product Manager | Product Builder
+          </span>
+        </h1>
+
+        <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed mb-4 max-w-3xl">
+          10+ years of experience turning customer problems, user insights, and data into better products and measurable outcomes.
+        </p>
+
+        <!-- Secondary Line / Competencies Tags -->
+        <p class="text-sm sm:text-base text-slate-400 font-medium mb-10 flex flex-wrap items-center gap-x-2.5 gap-y-1">
+          <span class="text-blue-400 font-semibold">Focus Areas:</span>
+          <span>Product Strategy</span> • 
+          <span>User Research</span> • 
+          <span>Analytics</span> • 
+          <span>Adoption</span> • 
+          <span>APIs</span> • 
+          <span>AI</span> • 
+          <span>Product Discovery</span>
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="#experience" class="px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg shadow-lg shadow-blue-600/25 transition-all text-sm sm:text-base flex items-center gap-2">
+            <span>Explore My Experience</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <a href="#products" class="px-6 py-3.5 bg-slate-800 hover:bg-slate-700/80 border border-slate-700 text-slate-200 font-semibold rounded-lg transition-all text-sm sm:text-base flex items-center gap-2">
+            <span>View Products I've Built</span>
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+          <a href="#resume" class="px-5 py-3.5 text-slate-300 hover:text-white border border-transparent hover:border-slate-700 rounded-lg transition-all text-sm font-medium flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            Download Resume
+          </a>
+          <a href="https://www.linkedin.com/in/edwin-paul/" target="_blank" rel="noopener noreferrer" class="px-4 py-3.5 text-slate-400 hover:text-blue-400 transition-colors">
+            <span class="sr-only">LinkedIn</span>
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+
+        <!-- Metric Highlights Bar -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-slate-800">
+          <div class="p-4 rounded-lg bg-slate-900/50 border border-slate-800/80">
+            <div class="text-3xl font-extrabold text-white tracking-tight">10+ <span class="text-blue-500 text-xl font-bold">Years</span></div>
+            <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Product &amp; Tech Experience</p>
+          </div>
+          <div class="p-4 rounded-lg bg-slate-900/50 border border-slate-800/80">
+            <div class="text-3xl font-extrabold text-blue-400 tracking-tight">+40%</div>
+            <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Feature Adoption Lift</p>
+          </div>
+          <div class="p-4 rounded-lg bg-slate-900/50 border border-slate-800/80">
+            <div class="text-3xl font-extrabold text-indigo-400 tracking-tight">-30%</div>
+            <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Customer Friction &amp; Tickets</p>
+          </div>
+          <div class="p-4 rounded-lg bg-slate-900/50 border border-slate-800/80">
+            <div class="text-3xl font-extrabold text-emerald-400 tracking-tight">5+</div>
+            <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Domains (Health, Energy, EdTech, API)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT ME -->
+  <section id="about" class="py-20 border-b border-slate-800/80 bg-slate-900/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-5">
+          <h2 class="text-xs font-bold text-blue-500 uppercase tracking-widest mb-2">About Me</h2>
+          <h3 class="text-3xl font-bold text-white tracking-tight leading-snug mb-6">
+            Bridge between strategic business goals, complex tech, and user clarity.
+          </h3>
+          <p class="text-slate-300 leading-relaxed mb-4">
+            I am a product-focused technology professional with 10+ years of experience working across healthcare, energy management, aviation, education, and enterprise technology products.
+          </p>
+          <p class="text-slate-300 leading-relaxed mb-4">
+            My experience spans product strategy, user research, competitive analysis, product analytics, adoption, UX improvements, roadmap planning, feature prioritization, product documentation, and cross-functional collaboration.
+          </p>
+          <p class="text-slate-400 leading-relaxed text-sm mb-6">
+            I combine product thinking with technical understanding, allowing me to work effectively with engineering, UX, analytics, business, and support teams. I also enjoy building products independently—from identifying a problem to defining an MVP and implementing the solution.
+          </p>
+
+          <div class="flex items-center gap-3 p-4 rounded-xl bg-slate-900 border border-slate-800">
+            <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 font-bold shrink-0">
+              PM
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-white">Post Graduate Program in Strategic Product Management</div>
+              <div class="text-xs text-slate-400">Indian Institute of Management (IIM) Visakhapatnam (2025)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Philosophy Interactive Block -->
+        <div class="lg:col-span-7">
+          <div class="p-6 sm:p-8 rounded-2xl card-surface relative overflow-hidden">
+            <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
+              <div>
+                <span class="text-xs font-mono text-blue-400 uppercase tracking-wider block">Operational Model</span>
+                <h4 class="text-xl font-bold text-white mt-1">My Product Philosophy</h4>
+              </div>
+              <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 border border-slate-700">Outcome-Driven</span>
+            </div>
+
+            <!-- Loop Diagram -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+              <div class="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800">
+                <span class="text-xs font-mono text-blue-400">01</span>
+                <div class="text-sm font-semibold text-white mt-1">Problem</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Identify friction</div>
+              </div>
+              <div class="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800">
+                <span class="text-xs font-mono text-blue-400">02</span>
+                <div class="text-sm font-semibold text-white mt-1">User</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Empathy &amp; persona</div>
+              </div>
+              <div class="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800">
+                <span class="text-xs font-mono text-blue-400">03</span>
+                <div class="text-sm font-semibold text-white mt-1">Insight</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Telemetry &amp; data</div>
+              </div>
+              <div class="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800">
+                <span class="text-xs font-mono text-blue-400">04</span>
+                <div class="text-sm font-semibold text-white mt-1">Opportunity</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">TAM &amp; business case</div>
+              </div>
+              <div class="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800">
+                <span class="text-xs font-mono text-indigo-400">05</span>
+                <div class="text-sm font-semibold text-white mt-1">Solution</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Co-design with Eng</div>
+              </div>
+              <div class="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800">
+                <span class="text-xs font-mono text-indigo-400">06</span>
+                <div class="text-sm font-semibold text-white mt-1">MVP</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Fast value to market</div>
+              </div>
+              <div class="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800">
+                <span class="text-xs font-mono text-indigo-400">07</span>
+                <div class="text-sm font-semibold text-white mt-1">Measure</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">KPIs &amp; Adoption</div>
+              </div>
+              <div class="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800">
+                <span class="text-xs font-mono text-indigo-400">08</span>
+                <div class="text-sm font-semibold text-white mt-1">Iterate</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Continuous refinement</div>
+              </div>
+            </div>
+
+            <div class="mt-6 p-4 rounded-xl bg-blue-950/20 border border-blue-900/40 text-xs sm:text-sm text-slate-300">
+              <span class="font-semibold text-blue-300">Guiding Principle:</span> "I turn customer problems and data into products, experiences, and measurable outcomes. Code and specs exist solely to unlock tangible value."
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PROFESSIONAL PRODUCT EXPERIENCE -->
+  <section id="experience" class="py-24 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-14">
+        <h2 class="text-xs font-bold text-blue-500 uppercase tracking-widest mb-2">Proven Track Record</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Professional Product Experience</h3>
+        <p class="text-slate-400 mt-3 text-base sm:text-lg">
+          10+ years across Product Management, Product Ownership, Product Analytics, Technology and Data-driven product development.
+        </p>
+      </div>
+
+      <!-- Experience Timeline Accordion -->
+      <div class="space-y-6">
+
+        <!-- EXPERIENCE 1: UnitedHealth Group (Enabler) -->
+        <div class="card-surface rounded-2xl overflow-hidden experience-card border border-slate-800 transition-all duration-300">
+          <div class="p-6 sm:p-8 cursor-pointer accordion-trigger flex flex-col md:flex-row md:items-center justify-between gap-4" onclick="toggleAccordion('exp-1')">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-1 text-xs font-semibold rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">Healthcare | Enterprise Products</span>
+                <span class="text-xs text-slate-400 font-mono">Enterprise Enabler Products</span>
+              </div>
+              <h4 class="text-xl sm:text-2xl font-bold text-white">UnitedHealth Group</h4>
+              <p class="text-base text-slate-300 font-medium">Consultant Business Systems</p>
+            </div>
+            <div class="flex items-center justify-between md:justify-end gap-4">
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">Apr 2024 – Present</span>
+              <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 chevron-icon" id="chevron-exp-1">
+                <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Metrics Bar (Always Visible) -->
+          <div class="px-6 sm:px-8 pb-6 border-b border-slate-800/60 grid grid-cols-2 sm:grid-cols-5 gap-3">
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-blue-400">+40%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Adv. Feature Usage</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-emerald-400">-30%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Telemetry Tickets</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-indigo-400">-30%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Doc Creation Time</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-cyan-400">+18%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Feature Utilization</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800 col-span-2 sm:col-span-1">
+              <div class="text-xl font-bold text-amber-400">+10%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">CSAT Score</div>
+            </div>
+          </div>
+
+          <!-- Expandable Details -->
+          <div class="accordion-content" id="content-exp-1">
+            <div class="p-6 sm:p-8 space-y-6 bg-slate-950/40">
+              <div>
+                <h5 class="text-xs font-mono uppercase tracking-wider text-blue-400 mb-3 font-semibold">Key Product Contributions &amp; Execution</h5>
+                <ul class="space-y-2.5 text-sm text-slate-300">
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-blue-500 font-bold mt-0.5">•</span>
+                    <span>Led strategic architecture analysis of the <strong>Enterprise Device Gateway platform</strong> to inform roadmap planning and product decisions.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-blue-500 font-bold mt-0.5">•</span>
+                    <span>Defined user engagement metrics and proposed a <strong>Device Engagement Score</strong> to measure platform adoption.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-blue-500 font-bold mt-0.5">•</span>
+                    <span>Identified low utilization of advanced configuration features; conceptualized and rolled out contextual onboarding and in-app guidance.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-blue-500 font-bold mt-0.5">•</span>
+                    <span>Designed Kibana analytics dashboards to understand documentation usage and identify content gaps across technical users.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-blue-500 font-bold mt-0.5">•</span>
+                    <span>Executed a phased adoption strategy that increased advanced feature usage by <strong>40%</strong> and standardized documentation frameworks, reducing content creation time by <strong>30%</strong>.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-blue-500 font-bold mt-0.5">•</span>
+                    <span>Analysed support tickets and incident data to identify recurring product issues, leading to a <strong>30% reduction in telemetry-related support tickets</strong>.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-blue-500 font-bold mt-0.5">•</span>
+                    <span>Used customer feedback and usage data to prioritize gateway feature development, improving customer satisfaction scores by <strong>10%</strong> and driving an <strong>18% improvement in feature utilization</strong>.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Product Thinking Breakdown -->
+              <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
+                <div class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold mb-2">Product Thinking in Action:</div>
+                <div class="flex flex-wrap items-center gap-2 text-xs font-medium text-slate-300">
+                  <span class="px-2 py-1 bg-slate-800 rounded">Problem identification</span> → 
+                  <span class="px-2 py-1 bg-slate-800 rounded">Usage analysis</span> → 
+                  <span class="px-2 py-1 bg-slate-800 rounded">KPI definition</span> → 
+                  <span class="px-2 py-1 bg-slate-800 rounded">Prioritization</span> → 
+                  <span class="px-2 py-1 bg-slate-800 rounded">Cross-functional execution</span> → 
+                  <span class="px-2 py-1 bg-blue-950 text-blue-300 border border-blue-800 rounded">Measurement</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE 2: UnitedHealth Group (API Platform) -->
+        <div class="card-surface rounded-2xl overflow-hidden experience-card border border-slate-800 transition-all duration-300">
+          <div class="p-6 sm:p-8 cursor-pointer accordion-trigger flex flex-col md:flex-row md:items-center justify-between gap-4" onclick="toggleAccordion('exp-2')">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-1 text-xs font-semibold rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Healthcare | API Platform</span>
+                <span class="text-xs text-slate-400 font-mono">API &amp; Widget Catalog</span>
+              </div>
+              <h4 class="text-xl sm:text-2xl font-bold text-white">UnitedHealth Group</h4>
+              <p class="text-base text-slate-300 font-medium">Consultant Business Systems</p>
+            </div>
+            <div class="flex items-center justify-between md:justify-end gap-4">
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">May 2022 – Apr 2024</span>
+              <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 chevron-icon" id="chevron-exp-2">
+                <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 sm:px-8 pb-6 border-b border-slate-800/60 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-blue-400">+40%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Platform Traffic Lift</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-emerald-400">17%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Self-Resolved via Docs</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-purple-400">TAM/SAM/SOM</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Market Sizing Formulated</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-amber-400">Cost-Benefit</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">ROI Justified Investments</div>
+            </div>
+          </div>
+
+          <div class="accordion-content" id="content-exp-2">
+            <div class="p-6 sm:p-8 space-y-6 bg-slate-950/40">
+              <div>
+                <h5 class="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-3 font-semibold">Strategic API Initiatives &amp; Market Alignment</h5>
+                <ul class="space-y-2.5 text-sm text-slate-300">
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-cyan-500 font-bold mt-0.5">•</span>
+                    <span>Conducted market and competitive analysis to shape the <strong>API Catalog product strategy</strong> and developer portal roadmap.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-cyan-500 font-bold mt-0.5">•</span>
+                    <span>Identified developer experience (DX) bottlenecks; proposed personalized API recommendations, interactive documentation, and automated sandbox environments.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-cyan-500 font-bold mt-0.5">•</span>
+                    <span>Recommended role-based access controls, developer usage dashboards, and customizable developer onboarding flows.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-cyan-500 font-bold mt-0.5">•</span>
+                    <span>Developed robust cost-benefit analyses and ROI forecasts; discovered redundant widget development and quantified significant operational savings.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-cyan-500 font-bold mt-0.5">•</span>
+                    <span>Conducted rigorous <strong>TAM, SAM, and SOM analysis</strong> for the Widget Catalog to prioritize ecosystem expansion.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-cyan-500 font-bold mt-0.5">•</span>
+                    <span>Leveraged GitHub activity data and platform usage telemetry to drive product strategy; analysed ServiceNow incidents proving that <strong>17% of tickets were resolved directly through enhanced documentation</strong>.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-cyan-500 font-bold mt-0.5">•</span>
+                    <span>Designed real-time Kibana analytics dashboards that contributed to a <strong>40% increase in API platform traffic</strong> while coordinating with finance, engineering, and business stakeholders.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Product Strategy Framework Visual -->
+              <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
+                <div class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold mb-2">Strategy to Execution Path:</div>
+                <div class="flex flex-wrap items-center gap-2 text-xs font-medium text-slate-300">
+                  <span class="px-2 py-1 bg-slate-800 rounded">Market Research</span> → 
+                  <span class="px-2 py-1 bg-slate-800 rounded">Competitive Analysis</span> → 
+                  <span class="px-2 py-1 bg-slate-800 rounded">Opportunity Identification</span> → 
+                  <span class="px-2 py-1 bg-slate-800 rounded">Business Case</span> → 
+                  <span class="px-2 py-1 bg-slate-800 rounded">Prioritization</span> → 
+                  <span class="px-2 py-1 bg-cyan-950 text-cyan-300 border border-cyan-800 rounded">Roadmap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE 3: HCL Technologies (Product Owner Case Study) -->
+        <div class="card-surface rounded-2xl overflow-hidden experience-card border-2 border-indigo-500/40 relative">
+          <div class="absolute top-0 right-0 bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-bl-lg">
+            Featured PO Case Study
+          </div>
+          <div class="p-6 sm:p-8 cursor-pointer accordion-trigger flex flex-col md:flex-row md:items-center justify-between gap-4" onclick="toggleAccordion('exp-3')">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-1 text-xs font-semibold rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Smart Buildings | Energy Management</span>
+                <span class="text-xs text-slate-400 font-mono">Schneider Electric – C-Bus</span>
+              </div>
+              <h4 class="text-xl sm:text-2xl font-bold text-white">HCL Technologies</h4>
+              <p class="text-base text-indigo-300 font-semibold">Product Owner</p>
+            </div>
+            <div class="flex items-center justify-between md:justify-end gap-4">
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">May 2020 – May 2022</span>
+              <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 chevron-icon" id="chevron-exp-3">
+                <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Metrics Bar -->
+          <div class="px-6 sm:px-8 pb-6 border-b border-slate-800/60 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-emerald-400">-30%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Setup Errors</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-blue-400">-25%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Setup Time</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-purple-400">-30%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">First-Time Tickets</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-amber-400">+40%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Scan Discovery Speed</div>
+            </div>
+          </div>
+
+          <!-- Deep-Dive Case Study Content -->
+          <div class="accordion-content" id="content-exp-3">
+            <div class="p-6 sm:p-8 space-y-6 bg-slate-950/40">
+              
+              <!-- Case Study 4-Box Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                  <div class="flex items-center gap-2 text-rose-400 font-bold text-xs uppercase tracking-wider mb-2">
+                    <span class="w-2 h-2 rounded-full bg-rose-500"></span> The Problem
+                  </div>
+                  <p class="text-sm text-slate-300">
+                    Complex hardware and software configuration on the Schneider Electric C-Bus system created high installation friction, configuration drop-offs, and excessive dependency on Tier-2 field support.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                  <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider mb-2">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> Discovery &amp; Insight
+                  </div>
+                  <p class="text-sm text-slate-300">
+                    Conducted qualitative installer interviews alongside IoT telemetry review. Discovered that 60% of setup failures were caused by confusing parameter steps and slow device network discovery.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                  <div class="flex items-center gap-2 text-blue-400 font-bold text-xs uppercase tracking-wider mb-2">
+                    <span class="w-2 h-2 rounded-full bg-blue-500"></span> Product Response
+                  </div>
+                  <p class="text-sm text-slate-300">
+                    Formulated installer personas, spearheaded a modular setup wizard, introduced contextual tooltips, and prioritized engineering sprint tickets for discovery protocol optimization.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                  <div class="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider mb-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Measurable Outcomes
+                  </div>
+                  <p class="text-sm text-slate-300">
+                    Achieved a 30% reduction in setup errors, 25% reduction in installation duration, 30% fewer setup support tickets, and improved scan speeds by 40%.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Responsibilities Checklist -->
+              <div>
+                <h5 class="text-xs font-mono uppercase tracking-wider text-indigo-400 mb-3 font-semibold">Core Product Owner Responsibilities</h5>
+                <ul class="space-y-2 text-sm text-slate-300">
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-indigo-500 font-bold">•</span>
+                    <span>Owned the backlog and prioritized technical debt vs. feature requests with engineering leads using Value-Effort matrices.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-indigo-500 font-bold">•</span>
+                    <span>Collaborated daily with UX designers on wireframes and conducted usability testing sessions with field technicians.</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-indigo-500 font-bold">•</span>
+                    <span>Contributed directly to cross-functional Go-To-Market (GTM) documentation and customer enablement programs.</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE 4: Infinite Computer Solutions -->
+        <div class="card-surface rounded-2xl overflow-hidden experience-card border border-slate-800">
+          <div class="p-6 sm:p-8 cursor-pointer accordion-trigger flex flex-col md:flex-row md:items-center justify-between gap-4" onclick="toggleAccordion('exp-4')">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-1 text-xs font-semibold rounded bg-teal-500/10 text-teal-400 border border-teal-500/20">Healthcare</span>
+                <span class="text-xs text-slate-400 font-mono">Conduent HSP</span>
+              </div>
+              <h4 class="text-xl sm:text-2xl font-bold text-white">Infinite Computer Solutions</h4>
+              <p class="text-base text-slate-300 font-medium">Product Analyst</p>
+            </div>
+            <div class="flex items-center justify-between md:justify-end gap-4">
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">Sep 2019 – Apr 2020</span>
+              <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 chevron-icon" id="chevron-exp-4">
+                <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 sm:px-8 pb-6 border-b border-slate-800/60 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-teal-400">-25%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Task Completion Time</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-blue-400">+20%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Search Efficiency</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-indigo-400">+18%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Key Feature Adoption</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-amber-400">+15%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">User Satisfaction</div>
+            </div>
+          </div>
+
+          <div class="accordion-content" id="content-exp-4">
+            <div class="p-6 sm:p-8 space-y-4 bg-slate-950/40 text-sm text-slate-300">
+              <p class="text-slate-400 text-xs font-mono uppercase tracking-wider font-semibold">Evidence of: Product Analytics + User Research + Experimentation + UX + Metrics</p>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">• Built Power BI analytics dashboards tracking onboarding funnels and user action drop-offs.</li>
+                <li class="flex items-start gap-2">• Conducted usability interviews and performance bottleneck analysis, decreasing task completion time by 25%.</li>
+                <li class="flex items-start gap-2">• Formulated hypotheses and supported A/B testing variations for the provider search experience, yielding a 20% efficiency increase.</li>
+                <li class="flex items-start gap-2">• Designed targeted contextual in-app guidance that lifted adoption of critical healthcare workflows by 18%.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE 5: ALTEN CALSOFT LABS -->
+        <div class="card-surface rounded-2xl overflow-hidden experience-card border border-slate-800">
+          <div class="p-6 sm:p-8 cursor-pointer accordion-trigger flex flex-col md:flex-row md:items-center justify-between gap-4" onclick="toggleAccordion('exp-5')">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-1 text-xs font-semibold rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">Aviation | Airbus</span>
+                <span class="text-xs text-slate-400 font-mono">Telemetry &amp; Mission Critical Systems</span>
+              </div>
+              <h4 class="text-xl sm:text-2xl font-bold text-white">ALTEN CALSOFT LABS</h4>
+              <p class="text-base text-slate-300 font-medium">Product Analyst</p>
+            </div>
+            <div class="flex items-center justify-between md:justify-end gap-4">
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">Apr 2019 – Sep 2019</span>
+              <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 chevron-icon" id="chevron-exp-5">
+                <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 sm:px-8 pb-6 border-b border-slate-800/60 grid grid-cols-3 gap-3">
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-sky-400">-40%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">System Errors</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-emerald-400">-30%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">User-Reported Issues</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-lg text-center border border-slate-800">
+              <div class="text-xl font-bold text-amber-400">+20%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Customer Satisfaction</div>
+            </div>
+          </div>
+
+          <div class="accordion-content" id="content-exp-5">
+            <div class="p-6 sm:p-8 space-y-3 bg-slate-950/40 text-sm text-slate-300">
+              <p>Analysed user interaction logs, flight-grade telemetry, and engineer bug reports for Airbus systems. Built real-time monitoring dashboards to detect system degradation, reducing errors by 40%. Defined KPI frameworks for product health and user engagement, enabling engineering to prioritize high-severity platform fixes based on real behavioral data.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE 6: SPI Technologies -->
+        <div class="card-surface rounded-2xl overflow-hidden experience-card border border-slate-800">
+          <div class="p-6 sm:p-8 cursor-pointer accordion-trigger flex flex-col md:flex-row md:items-center justify-between gap-4" onclick="toggleAccordion('exp-6')">
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-1 text-xs font-semibold rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">EdTech | Chegg Platform</span>
+                <span class="px-2 py-0.5 text-[10px] font-medium bg-slate-800 text-slate-300 rounded">Early Product &amp; UX Experience</span>
+              </div>
+              <h4 class="text-xl sm:text-2xl font-bold text-white">SPI Technologies</h4>
+              <p class="text-base text-slate-300 font-medium">Senior Subject Matter Expert</p>
+            </div>
+            <div class="flex items-center justify-between md:justify-end gap-4">
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800">Nov 2015 – Apr 2019</span>
+              <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 chevron-icon" id="chevron-exp-6">
+                <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-content" id="content-exp-6">
+            <div class="p-6 sm:p-8 space-y-4 bg-slate-950/40 text-sm text-slate-300">
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-4">
+                <div class="p-3 bg-slate-900 rounded-lg text-center border border-slate-800">
+                  <div class="text-lg font-bold text-purple-400">-7%</div>
+                  <div class="text-[11px] text-slate-400">Churn Reduction</div>
+                </div>
+                <div class="p-3 bg-slate-900 rounded-lg text-center border border-slate-800">
+                  <div class="text-lg font-bold text-emerald-400">-35%</div>
+                  <div class="text-[11px] text-slate-400">User Complaints</div>
+                </div>
+                <div class="p-3 bg-slate-900 rounded-lg text-center border border-slate-800 col-span-2 sm:col-span-1">
+                  <div class="text-lg font-bold text-blue-400">+25%</div>
+                  <div class="text-[11px] text-slate-400">Answer Quality Rating</div>
+                </div>
+              </div>
+              <p>Conducted qualitative and quantitative user research into student churn patterns on the Chegg Q&amp;A platform. Championed improvements to the question submission flow and enhanced transparency around tutor credentials. Spearheaded integration of a content originality API for automated plagiarism detection, resulting in a 35% decrease in user complaints and a 25% improvement in answer ratings.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE 7: Government Panchayat Office -->
+        <div class="card-surface rounded-2xl overflow-hidden experience-card border border-slate-800">
+          <div class="p-6 cursor-pointer accordion-trigger flex flex-col md:flex-row md:items-center justify-between gap-4" onclick="toggleAccordion('exp-7')">
+            <div>
+              <span class="text-xs font-mono text-slate-400">Public Sector / Civic Tech</span>
+              <h4 class="text-lg font-bold text-white mt-0.5">Government Panchayat Office, Kerala</h4>
+              <p class="text-sm text-slate-300">Technical Assistant</p>
+            </div>
+            <div class="flex items-center justify-between md:justify-end gap-4">
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-800">Nov 2012 – Oct 2013</span>
+              <div class="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 chevron-icon" id="chevron-exp-7">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-content" id="content-exp-7">
+            <div class="p-6 bg-slate-950/40 text-xs sm:text-sm text-slate-300 space-y-2">
+              <p>Engaged directly with civil servants and citizen end-users to diagnose core usability hurdles in civic administration software. Developed step-by-step training presentations and manuals, improving user onboarding speed and operational continuity across local government offices.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PRODUCTS I'VE BUILT (INDEPENDENT PRODUCT BUILDER) -->
+  <section id="products" class="py-24 border-b border-slate-800/80 bg-slate-900/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/25 text-xs text-indigo-300 font-semibold mb-3">
+          Independent Execution &amp; MVPs
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Products I've Built</h2>
+        <p class="text-slate-400 mt-3 text-base sm:text-lg">
+          Outside my professional work, I build products to explore ideas, validate concepts, and strengthen my understanding of users, technology, and product development.
+        </p>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- PRODUCT 1: EDUCARE -->
+        <div class="card-surface rounded-2xl flex flex-col justify-between overflow-hidden border border-slate-800 hover:border-blue-500/40 transition-all">
+          <div class="p-6 sm:p-7 space-y-5">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 text-xs font-semibold rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                Learning Management System
+              </span>
+              <a href="https://educare-hazel.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white flex items-center gap-1 text-xs font-mono">
+                Live Demo <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-white">Educare</h3>
+              <p class="text-xs text-slate-400 mt-1 font-medium">Modern course delivery &amp; student experience</p>
+            </div>
+
+            <div class="space-y-3 text-xs text-slate-300">
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">The Problem</span>
+                <p class="mt-0.5">Existing educational portals are often cluttered and disjointed, resulting in high cognitive load and student disengagement.</p>
+              </div>
+
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">Target Users</span>
+                <p class="mt-0.5">Students seeking structured self-paced learning and educators requiring clean lesson delivery.</p>
+              </div>
+
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">My Role &amp; MVP</span>
+                <p class="mt-0.5">End-to-end PM &amp; frontend builder: Scoped student journey, curriculum navigation, clean video/text modules, and responsive UI.</p>
+              </div>
+
+              <div class="pt-2">
+                <span class="text-blue-400 uppercase tracking-wider font-semibold block text-[10px]">Future Roadmap</span>
+                <div class="flex flex-wrap gap-1.5 mt-1.5">
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Assessments</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Certificates</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Student Analytics</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Instructor Dashboard</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">AI Assistant</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 bg-slate-900/60 border-t border-slate-800/80">
+            <a href="https://educare-hazel.vercel.app/" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-colors">
+              Launch Educare Demo
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUCT 2: RESTAURANT KPI -->
+        <div class="card-surface rounded-2xl flex flex-col justify-between overflow-hidden border border-slate-800 hover:border-emerald-500/40 transition-all">
+          <div class="p-6 sm:p-7 space-y-5">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 text-xs font-semibold rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                Analytics Dashboard Concept
+              </span>
+              <a href="https://restaurantkpi.ai.studio/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white flex items-center gap-1 text-xs font-mono">
+                Live Studio <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-white">Restaurant KPI</h3>
+              <p class="text-xs text-slate-400 mt-1 font-medium">Actionable intelligence for hospitality operators</p>
+            </div>
+
+            <div class="space-y-3 text-xs text-slate-300">
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">The Problem</span>
+                <p class="mt-0.5">Independent restaurant managers juggle fragmented POS, inventory, and labor data without a single glass-pane for daily decision-making.</p>
+              </div>
+
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">Key Metrics Focused</span>
+                <p class="mt-0.5">RevPASH (Revenue per Available Seat Hour), food waste ratio, table turnover speed, labor cost %.</p>
+              </div>
+
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">Product Decisions</span>
+                <p class="mt-0.5">Prioritized visual health badges over complex tables; optimized views for quick tablet scanning during shift changes.</p>
+              </div>
+
+              <div class="pt-2">
+                <span class="text-emerald-400 uppercase tracking-wider font-semibold block text-[10px]">Future Roadmap</span>
+                <div class="flex flex-wrap gap-1.5 mt-1.5">
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Historical Trends</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Benchmarking</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Threshold Alerts</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">AI Recommendations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 bg-slate-900/60 border-t border-slate-800/80">
+            <a href="https://restaurantkpi.ai.studio/" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-colors">
+              Launch KPI Dashboard
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUCT 3: WEBSITE ANALYTICS API -->
+        <div class="card-surface rounded-2xl flex flex-col justify-between overflow-hidden border border-slate-800 hover:border-purple-500/40 transition-all">
+          <div class="p-6 sm:p-7 space-y-5">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 text-xs font-semibold rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                API / Analytics Platform
+              </span>
+              <span class="text-xs font-mono text-purple-300">Architecture Spec</span>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-white">Website Analytics API</h3>
+              <p class="text-xs text-slate-400 mt-1 font-medium">Privacy-conscious, lightweight event ingestion engine</p>
+            </div>
+
+            <div class="space-y-3 text-xs text-slate-300">
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">Architecture Flow</span>
+                <div class="mt-1 p-2 rounded bg-slate-900 font-mono text-[10px] text-slate-300 border border-slate-800">
+                  Website Client → Tracking Script → Analytics API → Event Queue → Aggregate DB
+                </div>
+              </div>
+
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">Sample API Endpoints</span>
+                <div class="mt-1 space-y-1 font-mono text-[10px] text-indigo-300">
+                  <div class="bg-slate-900 px-2 py-1 rounded border border-slate-800/80">POST /api/events (Capture pageviews &amp; clicks)</div>
+                  <div class="bg-slate-900 px-2 py-1 rounded border border-slate-800/80">GET /api/analytics?interval=30d (Aggregations)</div>
+                </div>
+              </div>
+
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">PM Thinking &amp; Privacy</span>
+                <p class="mt-0.5">Designed without cookie dependency (GDPR/CCPA friendly), focusing on payload minimization (&lt;2KB) and high throughput.</p>
+              </div>
+
+              <div class="pt-2">
+                <span class="text-purple-400 uppercase tracking-wider font-semibold block text-[10px]">Future Roadmap</span>
+                <div class="flex flex-wrap gap-1.5 mt-1.5">
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Multi-tenant Auth</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Real-time Funnels</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Cohort Retention</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Webhook Alerts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 bg-slate-900/60 border-t border-slate-800/80">
+            <button onclick="alert('Website Analytics API: Lightweight event ingestion backend spec designed by Edwin Paul. Demonstrating backend PM requirements, schema models, and data privacy design.')" class="w-full py-2.5 px-4 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold flex items-center justify-center gap-2 transition-colors">
+              View Architecture Spec
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Extensible placeholder notice -->
+      <div class="mt-8 p-4 rounded-xl bg-slate-900/60 border border-dashed border-slate-800 text-center text-xs text-slate-400">
+        <span class="text-blue-400 font-semibold">+ Reusable Product Framework:</span> Modular architecture allows rapid inclusion of new case studies, MVPs, and experiments without redesigning the website.
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PRODUCT MANAGEMENT CAPABILITIES -->
+  <section id="capabilities" class="py-24 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-14">
+        <h2 class="text-xs font-bold text-blue-500 uppercase tracking-widest mb-2">Core Competencies</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">What I Bring to Product Management</h3>
+        <p class="text-slate-400 mt-3 text-base sm:text-lg">
+          A blend of strategic clarity, rigorous data analysis, user empathy, and hands-on technical fluency.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="p-6 rounded-2xl card-surface">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-4 font-bold text-base">01</div>
+          <h4 class="text-lg font-bold text-white mb-2">Product Strategy</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Market research, competitive analysis, TAM/SAM/SOM sizing, and mapping business value to multi-quarter execution roadmaps.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl card-surface">
+          <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-4 font-bold text-base">02</div>
+          <h4 class="text-lg font-bold text-white mb-2">User Research</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Qualitative user interviews, feedback distillation, installer and developer personas, and isolating underlying user friction.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl card-surface">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-4 font-bold text-base">03</div>
+          <h4 class="text-lg font-bold text-white mb-2">Product Analytics</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Defining KPI trees, tracking DAU/MAU and feature drop-offs, and building dashboards in Kibana and Power BI for real-time visibility.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl card-surface">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4 font-bold text-base">04</div>
+          <h4 class="text-lg font-bold text-white mb-2">Product Discovery</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Problem framing, continuous customer interviews, assumption mapping, and hypothesis-driven prototyping before committing code.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl card-surface">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-4 font-bold text-base">05</div>
+          <h4 class="text-lg font-bold text-white mb-2">Prioritization</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Balancing technical debt with customer impact using RICE, Kano, and Value vs. Effort frameworks to safeguard engineering focus.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl card-surface">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-4 font-bold text-base">06</div>
+          <h4 class="text-lg font-bold text-white mb-2">Product Adoption</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Optimizing onboarding flows, contextual tooltips, documentation architecture, and user activation to maximize feature retention.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl card-surface">
+          <div class="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-4 font-bold text-base">07</div>
+          <h4 class="text-lg font-bold text-white mb-2">UX &amp; Prototyping</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Mapping complex user journeys, creating rapid wireframes in Figma, and conducting iterative usability tests to simplify setup flows.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl card-surface">
+          <div class="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-4 font-bold text-base">08</div>
+          <h4 class="text-lg font-bold text-white mb-2">Product Marketing</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Product messaging, value proposition articulation, developer enablement, release notes, and go-to-market collaboration.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl card-surface">
+          <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 mb-4 font-bold text-base">09</div>
+          <h4 class="text-lg font-bold text-white mb-2">Technical PM</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Deep comfort with REST APIs, gateway architecture, data pipelines, schema contracts, and speaking the native language of software engineers.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl card-surface sm:col-span-2 lg:col-span-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-2 font-bold text-base">10</div>
+              <h4 class="text-lg font-bold text-white mb-1">Experimentation &amp; Iteration</h4>
+              <p class="text-sm text-slate-400 leading-relaxed">A/B testing, hypothesis framing, statistical baseline tracking, and iterative sprint reviews based on behavioral data.</p>
+            </div>
+            <div class="shrink-0">
+              <span class="inline-block px-3 py-1.5 rounded bg-blue-900/30 border border-blue-800 text-xs font-mono text-blue-300">Continuous Value Delivery</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!
