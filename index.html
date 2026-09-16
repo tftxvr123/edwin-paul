@@ -646,7 +646,7 @@
     </div>
   </section>
 
-  <!-- 4. PRODUCTS I'VE BUILT (INDEPENDENT MVPs) -->
+ <!-- 4. PRODUCTS I'VE BUILT (INDEPENDENT MVPs) -->
   <section id="products" class="py-24 border-b border-slate-800/80 bg-slate-900/20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -660,9 +660,56 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Products Grid (4 Products) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        <!-- PRODUCT 1: EDUCARE -->
+        <!-- PRODUCT 1: COSTPILOT (AZURE FINOPS) -->
+        <div class="card-surface rounded-2xl flex flex-col justify-between overflow-hidden border border-slate-800 hover:border-cyan-500/40 transition-all">
+          <div class="p-6 sm:p-7 space-y-5">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 text-xs font-semibold rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-mono">
+                Cloud FinOps / Cost Intelligence
+              </span>
+              <a href="https://costpilot-azure.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white flex items-center gap-1 text-xs font-mono">
+                Live Demo <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-white">CostPilot</h3>
+              <p class="text-xs text-slate-400 mt-1 font-medium">Proactive Azure cloud cost governance &amp; optimization intelligence</p>
+            </div>
+
+            <div class="space-y-3 text-xs text-slate-300">
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">The Problem</span>
+                <p class="mt-0.5">Unmonitored cloud resource sprawl and opaque service charges lead to unexpected Azure billing surges and zero financial visibility for engineering leads.</p>
+              </div>
+              <div>
+                <span class="text-slate-400 uppercase tracking-wider font-semibold block text-[10px]">Product Thinking &amp; Decisions</span>
+                <p class="mt-0.5">Prioritized visual consumption trends, resource-level unit cost attribution, and actionable rightsizing recommendations over raw invoice tables.</p>
+              </div>
+              <div class="pt-2">
+                <span class="text-cyan-400 uppercase tracking-wider font-semibold block text-[10px]">Future Roadmap</span>
+                <div class="flex flex-wrap gap-1.5 mt-1.5">
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Budget Anomaly Alerts</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Tagging Governance</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Idle Resource Shutdown</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[11px]">Multi-Cloud (AWS/GCP)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 bg-slate-900/60 border-t border-slate-800/80">
+            <a href="https://costpilot-azure.vercel.app/" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-colors">
+              Launch CostPilot Demo
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUCT 2: EDUCARE -->
         <div class="card-surface rounded-2xl flex flex-col justify-between overflow-hidden border border-slate-800 hover:border-blue-500/40 transition-all">
           <div class="p-6 sm:p-7 space-y-5">
             <div class="flex items-center justify-between">
@@ -708,7 +755,7 @@
           </div>
         </div>
 
-        <!-- PRODUCT 2: RESTAURANT KPI -->
+        <!-- PRODUCT 3: RESTAURANT KPI -->
         <div class="card-surface rounded-2xl flex flex-col justify-between overflow-hidden border border-slate-800 hover:border-emerald-500/40 transition-all">
           <div class="p-6 sm:p-7 space-y-5">
             <div class="flex items-center justify-between">
@@ -753,7 +800,7 @@
           </div>
         </div>
 
-        <!-- PRODUCT 3: WEBSITE ANALYTICS API -->
+        <!-- PRODUCT 4: WEBSITE ANALYTICS API -->
         <div class="card-surface rounded-2xl flex flex-col justify-between overflow-hidden border border-slate-800 hover:border-purple-500/40 transition-all">
           <div class="p-6 sm:p-7 space-y-5">
             <div class="flex items-center justify-between">
